@@ -8,6 +8,15 @@ const initialState = {
   message: "",
 };
 
+// Register thunk
+export const register = createAsyncThunk(
+  "auth/register",
+  async (user, thunkAPI) => {
+    console.log(user);
+  }
+);
+
+// Auth Slice
 export const authSlice = createSlice({
   name: "auth",
   initialState,
