@@ -5,7 +5,11 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <Link to="/">SupportDesk</Link>
+        <Link to="/">
+          <h1 className="font-bold">
+            <span className="text-cyan-500">Support</span> Desk
+          </h1>
+        </Link>
       </div>
       <ul>
         <li>
@@ -15,7 +19,7 @@ function Header() {
         </li>
         <li>
           <Link to="/register">
-            <FaUser /> Register
+            <FaUser className="text-cyan-600" /> Register
           </Link>
         </li>
       </ul>
