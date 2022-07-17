@@ -33,6 +33,7 @@ function Register() {
     if (password !== password2) {
       toast.error("Passwords do no match");
     } else {
+      // Create user data object to be dispatched
       const userData = {
         name,
         email,

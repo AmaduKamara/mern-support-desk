@@ -16,6 +16,14 @@ export const register = createAsyncThunk(
   }
 );
 
+// Login thunk
+export const login = createAsyncThunk(
+  "auth/login",
+  async (user, thunkAPI) => {
+    console.log(user);
+  }
+);
+
 // Auth Slice
 export const authSlice = createSlice({
   name: "auth",
