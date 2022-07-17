@@ -27,10 +27,10 @@ function Register() {
 
   const { name, email, password, password2 } = formData;
   return (
-    <div>
-      <section className="heading">
-        <h1>
-          <FaUser /> Register
+    <>
+      <section className="heading text-center flex flex-col justify-center items-center">
+        <h1 className="flex items-center text-center">
+          <FaUser className="mr-4" /> Register
         </h1>
         <p>Please create an account</p>
       </section>
@@ -89,7 +89,7 @@ function Register() {
           </div>
         </form>
       </section>
-    </div>
+    </>
   );
 }
 
